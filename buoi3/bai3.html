@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        width: 300px;
+        display: inline-block;
+      }
+      table {
+        margin: 100px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <label for="input-name">Username</label>
+          </td>
+          <td>
+            <input type="text" id="input-name" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="input-password">Password</label></td>
+          <td><input type="password" id="input-password" /></td>
+        </tr>
+        <tr>
+          <td><label for="input-CoE">City of Employment</label></td>
+          <td><input type="text" id="input-CoE" /></td>
+        </tr>
+        <tr>
+          <td><label for="webserver">Web server</label></td>
+          <td>
+            <select id="webserver">
+              <option value="0">-Choose a server-</option>
+              <option value="1">Facebook</option>
+              <option value="2">Zalo</option>
+              <option value="3">Telegram</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label
+              >Please specify <br />
+              your role:</label
+            >
+          </td>
+          <td>
+            <div>
+              <label><input type="radio" name="role" />Admin</label>
+            </div>
+            <div>
+              <label><input type="radio" name="role" />Engineer</label>
+            </div>
+            <div>
+              <label><input type="radio" name="role" />Manager</label>
+            </div>
+            <div>
+              <label><input type="radio" name="role" />Geust</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label
+              >Single Sign-on<br />
+              to the following:</label
+            >
+          </td>
+          <td>
+            <div>
+              <label><input type="checkbox" name="social" />Mail</label>
+            </div>
+            <div>
+              <label><input type="checkbox" name="social" />Payroll</label>
+            </div>
+            <div>
+              <label><input type="checkbox" name="social" />Self-service</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="accept-button" align="center">
+            <button>Login</button> <button type="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- <span>
+      <div><label for="input-name">Username</label></div>
+      <div><label for="input-password">Password</label></div>
+      <div><label for="input-CoE">City of Employment</label></div>
+      <div><label for="webserver">Web server</label></div>
+      <div><label>Please specify your role:</label></div>
+      <div><label>Single Sign-on to the following:</label></div>
+    </span>
+    <span>
+      <div>
+        <input type="text" id="input-name" />
+      </div>
+      <div>
+        <input type="password" id="input-password" />
+      </div>
+      <div>
+        <input type="text" id="input-CoE" />
+      </div>
+      <div>
+        <select id="webserver">
+          <option value="0">-Choose a server-</option>
+          <option value="1">Facebook</option>
+          <option value="2">Zalo</option>
+          <option value="3">Telegram</option>
+        </select>
+      </div>
+      <div>
+        <label><input type="radio" name="role" />Admin</label>
+        <label><input type="radio" name="role" />Engineer</label>
+        <label><input type="radio" name="role" />Manager</label>
+        <label><input type="radio" name="role" />Geust</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="social" />Mail</label>
+        <label><input type="checkbox" name="social" />Payroll</label>
+        <label><input type="checkbox" name="social" />Self-service</label>
+      </div>
+    </span> -->
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.content {
+  width: 600px;
+  padding: 10px 10px;
+}
+.f-box,
+.l-box {
+  padding: 12px 20px 4px;
+  font-size: 30px;
+  border-radius: 50%;
+  background: rgb(158, 155, 155);
+}
+.l-box {
+  float: right;
+}
+p {
+  padding: 0px 55px;
+}

@@ -14,10 +14,13 @@
       }
       td button {
         background-color: greenyellow;
+        width: 100%;
       }
       select {
-        width: 170px;
-        height: 23px;
+        width: 100%;
+      }
+      input {
+        width: 100%;
       }
     </style>
   </head>
@@ -31,36 +34,42 @@
       </p>
       <table width="100%" cellspacing="8" cellpadding="">
         <tr>
-          <td><label for="first-name">First name</label></td>
-          <td><label for="last-name"></label>Last name</td>
-        </tr>
-        <tr>
-          <td><input type="text" id="first-name" placeholder="John" /></td>
-          <td><input type="text" id="last-name" placeholder="Smith" /></td>
-        </tr>
-        <tr>
-          <td><label for="email">Email address</label></td>
-          <td><label for="address">Address</label></td>
-        </tr>
-        <tr>
-          <td><input type="email" id="email" placeholder="john@example.com" /></td>
-          <td><input type="text" id="addess" placeholder="Silk St" /></td>
-        </tr>
-        <tr>
-          <td><label for="city">City</label></td>
-          <td><label for="state">State(optional)</label></td>
-        </tr>
-        <tr>
-          <td><input type="text" id="city" placeholder="London" /></td>
-          <td><input type="text" id="state" placeholder="" /></td>
-        </tr>
-        <tr>
-          <td><label for="zip">ZIP code</label></td>
-          <td><label for="country">Country</label></td>
-        </tr>
-        <tr>
-          <td><input type="text" id="zip" placeholder="EC2Y8DS" /></td>
           <td>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" placeholder="John" />
+          </td>
+          <td>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" placeholder="Smith" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="john@example.com" />
+          </td>
+          <td>
+            <label for="address">Address</label>
+            <input type="text" id="addess" placeholder="Silk St" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="London" />
+          </td>
+          <td>
+            <label for="state">State(optional)</label>
+            <input type="text" id="state" placeholder="" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="zip">ZIP code</label>
+            <input type="text" id="zip" placeholder="EC2Y8DS" />
+          </td>
+          <td>
+            <label for="country">Country</label>
             <select id="country">
               <option value="0">United Kingdom</option>
               <option value="1">Ha Noi</option>

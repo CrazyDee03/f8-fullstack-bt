@@ -1,0 +1,20 @@
+.content {
+  padding: 0x 10px;
+}
+h2 {
+  color: rgb(32, 32, 162);
+}
+.content-box {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+span {
+  background: rgb(184, 184, 201);
+}
+.content-box p {
+  padding: 0 15px;
+}
+.link {
+  padding: 0px 15px;
+}

@@ -1,0 +1,36 @@
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  width: 25%;
+  margin: 0 16px;
+  display: inline-block;
+  padding: 50px 20px;
+  border: 0.5px solid black;
+  box-shadow: 5px 5px 5px #ccc;
+}
+.fa-camera,
+.fa-laptop,
+.fa-video {
+  color: orange;
+  font-size: 50px;
+}
+.btn a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  border: 0.1px solid whitesmoke;
+  background-color: orange;
+}
+.content1 i {
+  padding: 30px 30px;
+  border-radius: 50%;
+  border: 0.5px solid red;
+}
+
+.mb20 {
+  margin-bottom: 30px;
+}

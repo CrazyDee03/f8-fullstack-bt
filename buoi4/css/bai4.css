@@ -1,10 +1,13 @@
 .content {
   padding: 0x 10px;
 }
+.content-box-1 {
+  width: 50%;
+}
 h2 {
   color: rgb(32, 32, 162);
 }
-.content-box {
+.content-box-2 {
   padding: 10px 15px;
   border: 1px solid black;
   border-radius: 20px;
@@ -12,7 +15,7 @@ h2 {
 span {
   background: rgb(184, 184, 201);
 }
-.content-box p {
+.content-box-2 p {
   padding: 0 15px;
 }
 .link {

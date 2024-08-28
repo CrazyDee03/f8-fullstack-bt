@@ -1,0 +1,45 @@
+.box1,
+.box2,
+.box3 {
+  padding: 5px 0px;
+  border: 3px solid white;
+  color: white;
+  background: rgb(247, 77, 20);
+}
+
+.fa-minus {
+  display: none;
+}
+
+.text {
+  display: none;
+}
+
+.content1 input:checked ~ .text1 {
+  display: block;
+}
+.content2 input:checked ~ .text2 {
+  display: block;
+}
+.content3 input:checked ~ .text3 {
+  display: block;
+}
+
+.content1 input:checked ~ .box1 label .fa-plus {
+  display: none;
+}
+.content1 input:checked ~ .box1 label .fa-minus {
+  display: inline;
+}
+.content2 input:checked ~ .box2 label .fa-plus {
+  display: none;
+}
+.content2 input:checked ~ .box2 label .fa-minus {
+  display: inline;
+}
+.content3 input:checked ~ .box3 label .fa-plus {
+  display: none;
+}
+.content3 input:checked ~ .box3 label .fa-minus {
+  display: inline;
+}

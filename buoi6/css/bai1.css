@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 480px;
+  transform: translate(100%);
+}
+.container .title {
+  font-family: "Lobster";
+  font-size: 40px;
+}
+.container .text {
+  font-family: "Lato";
+}
+.content {
+  width: 100%;
+}
+.content form div {
+  position: relative;
+}
+.content form input {
+  width: 100%;
+  padding: 10px 0 10px 45px;
+}
+.container .text span {
+  color: red;
+}
+.message-box {
+  height: 200px;
+}
+.message-box::placeholder {
+  position: absolute;
+  top: 20px;
+}
+.notice-box {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  /* display: none; */
+  width: 120px;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.triangle {
+  position: absolute;
+  /* display: none; */
+  top: 110px;
+  left: 60px;
+  width: 0px;
+  height: 0px;
+  border: 12px solid;
+  border-color: black transparent transparent transparent;
+}
+.fa-message {
+  left: 0;
+  background-color: rgb(185, 182, 182);
+  color: white;
+  padding: 91px 10px;
+}
+.fa-user,
+.fa-star,
+.fa-xmark,
+.fa-envelope,
+.fa-mobile-screen-button,
+.fa-book,
+.fa-message {
+  position: absolute;
+}
+.fa-user,
+.fa-envelope,
+.fa-mobile-screen-button,
+.fa-book {
+  left: 0;
+  background-color: rgb(185, 182, 182);
+  color: white;
+  padding: 12px 12px;
+}
+.fa-star {
+  right: 0px;
+  color: rgb(185, 182, 182);
+  font-size: 6px;
+  padding: 15px 15px;
+}
+.fa-xmark {
+  right: 0px;
+  color: rgb(33, 33, 33);
+  font-size: 12px;
+  padding: 15px 15px;
+  font-weight: 700;
+  display: none;
+}
+.title,
+.text,
+.content form div {
+  margin-top: 20px;
+}
+.check-box {
+  display: inline-block;
+}
+.fake-checkbox {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 3px solid rgb(185, 182, 182);
+}
+.tick {
+  display: inline-block;
+  display: none;
+  width: 16px;
+  height: 12px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  rotate: -45deg;
+  margin-bottom: 0px;
+  margin-left: 1.5px;
+}
+.button {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+#check:checked ~ label .fake-checkbox .tick {
+  display: block;
+}
+.content form input:focus ~ .focus {
+  background-color: black;
+  color: white;
+}
+.content form input:hover ~ .focus {
+  background-color: black;
+  color: white;
+}
+.content form input:focus ~ .fa-star {
+  display: none;
+}
+.content form input:focus ~ .fa-xmark {
+  display: inline-block;
+}

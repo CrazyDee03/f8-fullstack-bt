@@ -1,0 +1,84 @@
+.container {
+  background: #ebf5fe;
+  font-family: "Roboto";
+  color: #666666;
+}
+.content {
+  transform: translate(15%);
+  display: flex;
+  width: 1160px;
+  height: 680px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(228, 226, 226, 0.986);
+}
+.title {
+  width: 142px;
+}
+h2 {
+  display: inline-block;
+}
+.fa-brush {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(198, 48, 73);
+  color: white;
+  font-size: 20px;
+}
+.fa-chart-tree-map {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(32, 210, 148);
+  color: white;
+  font-size: 20px;
+}
+.fa-bolt {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(218, 162, 42);
+  color: white;
+  font-size: 20px;
+}
+.fa-rocket-launch {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(66, 79, 191);
+  color: white;
+  font-size: 20px;
+}
+.fa-layer-group {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(113, 36, 157);
+  color: white;
+  font-size: 20px;
+}
+.fa-envelope {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(81, 191, 66);
+  color: white;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}

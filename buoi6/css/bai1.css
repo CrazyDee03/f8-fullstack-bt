@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .container {
   width: 480px;
   transform: translate(100%);
@@ -18,9 +17,6 @@
 .content {
   width: 100%;
 }
-.content form div {
-  position: relative;
-}
 .content form input {
   width: 100%;
   padding: 10px 0 10px 45px;
@@ -28,34 +24,39 @@
 .container .text span {
   color: red;
 }
-.message-box {
+.message-input {
   height: 200px;
 }
-.message-box::placeholder {
+.message-input::placeholder {
   position: absolute;
   top: 20px;
 }
-.notice-box {
-  position: absolute;
-  top: 70px;
-  left: 50px;
-  /* display: none; */
-  width: 120px;
-  height: 40px;
-  padding-top: 10px;
-  text-align: center;
-  background-color: black;
-  color: white;
+.content .form-input {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
 }
-.triangle {
+.message-box {
+  display: none;
+  flex-direction: column;
   position: absolute;
-  /* display: none; */
-  top: 110px;
-  left: 60px;
-  width: 0px;
-  height: 0px;
-  border: 12px solid;
-  border-color: black transparent transparent transparent;
+  top: -60px;
+  left: 50px;
+}
+
+.message-box div:first-child {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 16px;
+}
+
+.message-box div:last-child {
+  width: 0;
+  height: 0;
+  border: 10px solid #000;
+  border-color: #000 transparent transparent transparent;
+  margin-left: 20px;
 }
 .fa-message {
   left: 0;
@@ -95,10 +96,20 @@
   font-weight: 700;
   display: none;
 }
-.title,
-.text,
-.content form div {
-  margin-top: 20px;
+.form-header {
+  margin-bottom: 30px;
+}
+.form-header h2 {
+  margin-bottom: 16px;
+}
+.form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.check {
+  display: flex;
+  align-items: center;
 }
 .check-box {
   display: inline-block;
@@ -146,4 +157,7 @@
 }
 .content form input:focus ~ .fa-xmark {
   display: inline-block;
+}
+.content input:focus ~ .message-box {
+  display: flex;
 }

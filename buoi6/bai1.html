@@ -11,41 +11,59 @@
   </head>
   <body>
     <div class="container">
-      <h2 class="title">Hey there</h2>
-      <p class="text">
-        <span>We'd like to hear from you.</span> Send us your message or just say hy with our contact form or directly
-        via phone, we love to chat.
-      </p>
-      <div><p class="notice-box">Enter your name</p></div>
-      <div class="triangle"></div>
+      <div class="form-header">
+        <h2 class="title">Hey there</h2>
+        <p class="text">
+          <span>We'd like to hear from you.</span> Send us your message or just say hy with our contact form or directly
+          via phone, we love to chat.
+        </p>
+      </div>
 
       <div class="content">
         <form>
-          <div class="name-input">
+          <div class="form-input">
             <input type="text" class="name-box" placeholder="Your name" />
             <i class="fa-solid fa-user focus"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-xmark"></i>
+            <div class="message-box">
+              <div>Enter your name</div>
+              <div></div>
+            </div>
           </div>
-          <div class="email-input">
+          <div class="form-input">
             <input type="email" class="email-box" placeholder="your@domain.com" />
             <i class="fa-solid fa-envelope focus"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-xmark"></i>
+            <div class="message-box">
+              <div>Enter your email</div>
+              <div></div>
+            </div>
           </div>
-          <div class="phone-number">
-            <input type="number" class="phone-box" placeholder="+44 00 123" />
-            <i class="fa-solid fa-mobile-screen-button focus"></i>
+          <div class="form-input">
+            <input type="number" class="phone-box" placeholder="+44 00 123" required fdprocessedid="vemops" />
+            <i class="fa-solid fa-mobile-screen-button focus"></i><i class="fa-solid fa-xmark"></i>
+            <div class="message-box">
+              <div>Enter your phone number</div>
+              <div></div>
+            </div>
           </div>
-          <div class="subject">
+          <div class="form-input">
             <input type="text" class="subject-box" placeholder="Subject" />
             <i class="fa-solid fa-book focus"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-xmark"></i>
           </div>
-          <div class="message">
-            <input type="text" class="message-box" placeholder="Message" />
+          <div class="form-input">
+            <input type="text" class="message-input" placeholder="Message" />
             <i class="fa-solid fa-message focus"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-xmark"></i>
+            <div class="message-box">
+              <div>Enter your message</div>
+              <div></div>
+            </div>
           </div>
-          <div class="checkbox">
-            <input type="checkbox" id="check" hidden />
-            <label for="check"
-              ><span class="fake-checkbox"><span class="tick"></span></span>Send me a copy of this message</label
-            >
+          <div class="form-check">
+            <div class="checkbox">
+              <input type="checkbox" id="check" hidden />
+              <label for="check"
+                ><span class="fake-checkbox"><span class="tick"></span></span>Send me a copy of this message</label
+              >
+            </div>
             <button class="button">SEND</button>
           </div>
         </form>

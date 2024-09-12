@@ -1,98 +1,67 @@
 * {
-  box-sizing: inherit;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+main {
+  height: 1000px;
+  background-color: #ebf5fe;
+}
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  min-width: 1280px;
+}
+ul {
+  list-style: none;
+}
+.padding-header {
+  padding: 24px 40px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
-  width: 240px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
-.logo-image {
-  width: 100px;
+.logo img {
+  width: 200px;
 }
-.fa-chevron-down {
-  font-size: 12px;
-  font-weight: 500;
-}
-.content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-}
-.category {
-  width: 80px;
-  position: relative;
-  display: inline-block;
-  text-align: right;
-  color: black;
-  font-weight: 600;
-}
-.fa-table {
-  position: absolute;
-  font-size: 12px;
-  left: 0;
-  top: 3px;
-  font-weight: 600;
-}
-.category-pc {
-  width: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style: none;
-}
-.focus {
-  list-style: none;
-}
-.list {
+.logo a:last-child {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  margin-left: 28px;
+  padding: 16px 20px;
+  background-color: #dddddd6e;
+  border-radius: 53px;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav-bar ul li {
+  display: inline-block;
+  margin: 0 16px;
 }
 .btn {
-  background-color: rgba(0, 0, 255, 0.659);
-  color: white;
-  width: 80px;
-  height: 25px;
-  border: none;
+  display: flex;
+  align-items: center;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  padding: 16px 24px;
+  background-image: linear-gradient(to right, rgb(54, 81, 200), rgb(203, 40, 203));
   border-radius: 5px;
-}
-.home-menu {
-  display: none;
-}
-.home:hover .home-menu {
-  display: block;
-}
-.course-menu {
-  display: none;
-}
-.course:hover .course-menu {
-  display: block;
-}
-.dashboard-menu {
-  display: none;
-}
-.dashboard:hover .dashboard-menu {
-  display: block;
-}
-.page-menu {
-  display: none;
-}
-.page:hover .page-menu {
-  display: block;
-}
-.element-menu {
-  display: none;
-}
-.element:hover .element-menu {
-  display: block;
-}
-.blog-menu {
-  display: none;
-}
-.blog:hover .blog-menu {
-  display: block;
 }

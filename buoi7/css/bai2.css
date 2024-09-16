@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-image: url("../image/login-bg2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+}
+
+.just-log h2 {
+  position: absolute;
+  color: white;
+  top: 70px;
+}
+
+.just-log span {
+  padding: 0px 3px 0px 6px;
+  color: #ff574d;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.just-log p {
+  position: absolute;
+  color: white;
+  top: 120px;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.just-log .more {
+  position: absolute;
+  color: #ff574d;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 25px;
+  bottom: 210px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 150px;
+}
+
+.social-icons a {
+  border: 1px solid transparent;
+  background-color: rgba(225, 66, 66, 0.912);
+  border-radius: 20%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 40px;
+  height: 40px;
+}
+
+.just-log .fa-arrow-right {
+  position: absolute;
+  color: #ff574d;
+  background-color: white;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.35);
+  padding: 12px 12px;
+  border-radius: 100%;
+  right: -20px;
+  bottom: 50%;
+}
+
+.login h3 {
+  margin-top: 50px;
+}
+
+.login .line {
+  width: 60px;
+  height: 1px;
+  background-color: #ff574d;
+  margin-top: 10px;
+}
+
+.login span {
+  color: #ff574d;
+}
+
+.login a {
+  color: #717171;
+}
+
+.login p {
+  color: #717171;
+}
+
+.login form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .form-content {
+  width: 80%;
+}
+
+.login .input-form {
+  width: 100%;
+  height: 35px;
+  margin-top: 25px;
+  padding: 0 16px;
+  outline: none;
+}
+
+.login .remember-forgot {
+  position: relative;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.remember-forgot input {
+  width: 16px;
+}
+
+.remember-forgot a {
+  position: absolute;
+  right: 0;
+}
+
+.login .btn {
+  font-size: 16px;
+  color: white;
+  background-color: #ff574d;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  width: 80%;
+  height: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login .register-link {
+  margin-top: 20px;
+}
+
+.just-log {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 10px;
+  width: 40%;
+  background-color: #ff574d;
+}
+
+.login {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 60%;
+  background-color: white;
+}

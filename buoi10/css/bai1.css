@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  max-width: 1360px;
+  margin: 40px auto;
+}
+.content {
+  display: flex;
+}
+.time-line {
+  width: 100%;
+}
+.time-line-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.item-content {
+  text-align: right;
+  width: 40%;
+  margin-right: 50px;
+}
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-family: "Space Grotesk";
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ddd;
+  right: -36px;
+  top: 5px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: green;
+  right: -31px;
+  top: 11px;
+}
+.text {
+  position: relative;
+  font-family: "Inter";
+}
+.text::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150%;
+  background: #ddd;
+  right: -25px;
+  top: -16px;
+}
+.text p {
+  margin-bottom: 20px;
+}
+a {
+  padding: 4px 8px;
+  background: rgb(212, 210, 210);
+  border-radius: 999px;
+  display: inline-block;
+  transition-property: background, color;
+  transition: 0.5s, linear;
+}
+.date {
+  position: relative;
+  top: 8px;
+}
+.image-content {
+  width: 100%;
+  position: relative;
+}
+.image-content .image img {
+  width: 100%;
+}
+.image:first-child {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+}
+.image:last-child {
+  position: absolute;
+  width: 30%;
+  right: 35%;
+  top: 10%;
+}
+.award {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: #415aaf;
+  color: rgba(255, 255, 255, 0.779);
+}
+.award div {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.award div p:first-child {
+  font-size: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+}
+.item-content:hover .law-category {
+  background-color: pink;
+  color: white;
+}

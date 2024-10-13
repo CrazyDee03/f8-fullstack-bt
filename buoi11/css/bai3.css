@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #353a46;
+}
+.container {
+  width: 1140px;
+  padding: 100px;
+  margin: 0 auto;
+}
+.envelope {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  transition: translate 1s ease;
+  overflow: hidden;
+}
+.envelope:hover {
+  translate: 0 100px;
+}
+.envelope-open {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #b3382f;
+  bottom: 0;
+  transition: bottom 0.5s ease;
+}
+.envelope:hover .envelope-open {
+  bottom: 200px;
+  transition-delay: 0.2s;
+}
+.envelope-top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 100px solid #b3382f;
+  border-bottom: 100px solid transparent;
+  bottom: 0;
+}
+.envelope-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 150px solid #d64f45;
+  border-right: 150px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.envelope-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid #d3564d;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #d3564d;
+  bottom: 0;
+  z-index: 3;
+}
+.letter {
+  position: absolute;
+  width: 260px;
+  height: 70px;
+  background: #fff;
+  left: 20px;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.envelope:hover .letter {
+  height: 300px;
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.topside {
+  display: flex;
+  height: 24px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.item {
+  display: inline-block;
+  width: 16px;
+  height: 24px;
+  background: #c3453d;
+  transform: skew(-30deg);
+  padding: 8px;
+  margin: 0 auto;
+}
+.line-1 {
+  position: absolute;
+  width: 140px;
+  height: 16px;
+  background: #c3453d;
+  left: 12px;
+  top: 45px;
+  padding: 8px;
+}
+.line-2 {
+  position: absolute;
+  width: 100px;
+  height: 16px;
+  background-color: #c3453d;
+  left: 12px;
+  top: 75px;
+  padding: 8px;
+}
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #dfb4bc;
+  top: 120px;
+  right: 25px;
+}
+.shadow {
+  width: 300px;
+  height: 0;
+  box-shadow: 0 0 55px 10px #000;
+  transform: rotateX(70deg);
+  transition: all 0.5s ease;
+  margin: 150px auto;
+}
+.envelope:hover ~ .shadow {
+  scale: 0.5 1;
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background: #ddd;
+  font-family: sans-serif;
+}
+.container {
+  width: 768px;
+  margin: 150px auto;
+}
+.content {
+  position: relative;
+}
+.list ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+.list ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  flex-grow: 1;
+}
+.list ul li label {
+  position: relative;
+  display: block;
+  padding: 8px;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.content-container {
+  position: absolute;
+  display: flex;
+  align-items: end;
+  height: 300px;
+  top: -90px;
+  transform: rotateX(90deg);
+  transition: all 0.5s ease;
+  opacity: 0.2;
+}
+.item-content {
+  height: 150px;
+  padding: 12px;
+  background: #fff;
+  line-height: 1.2;
+  overflow: auto;
+}
+.list label:hover {
+  color: #fff;
+  background: #3285c4;
+}
+.list input:checked + .content-container {
+  transform: rotateX(0deg);
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+#item-1:checked ~ li > .label-1,
+#item-2:checked ~ li > .label-2,
+#item-3:checked ~ li > .label-3,
+#item-4:checked ~ li > .label-4 {
+  background-color: #3285c4;
+  color: #fff;
+}

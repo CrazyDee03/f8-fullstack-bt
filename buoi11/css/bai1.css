@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #20aced;
+  overflow: hidden;
+}
+.menu-nav ul li {
+  list-style: none;
+  padding: 8px 8px 8px 0;
+}
+.title {
+  position: absolute;
+  color: white;
+  text-align: right;
+  top: 50%;
+  right: 10%;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 100;
+  translate: 0 -50%;
+}
+.title h1 {
+  font-size: 4.6rem;
+}
+span {
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+.overlay {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff;
+  top: -100px;
+  left: -100px;
+  transition: scale 1s ease;
+}
+.button1,
+.button2 {
+  position: absolute;
+  color: #20aced;
+  z-index: 1;
+  font-size: 45px;
+  top: 12px;
+  left: 22px;
+  cursor: pointer;
+  user-select: none;
+}
+.button1 {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+.button2 {
+  visibility: hidden;
+  transition-property: transform, visibility;
+  transition: 0.2s linear;
+}
+#checkpoint:checked ~ label > .button1 {
+  opacity: 0;
+}
+#checkpoint:checked ~ label > .button2 {
+  visibility: visible;
+  transform: rotate(-180deg);
+}
+#checkpoint:checked ~ .overlay {
+  scale: 30 30;
+}
+#checkpoint:checked ~ .menu-nav {
+  visibility: visible;
+  opacity: 1;
+}
+.menu-nav {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.menu-nav ul li label {
+  display: inline-block;
+  color: #20aced;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px 8px 8px 50px;
+}
+#nav1:checked + label,
+#nav2:checked + label,
+#nav3:checked + label,
+#nav4:checked + label {
+  background: #ddd;
+  color: #000;
+}
